@@ -1,5 +1,7 @@
-FROM ubuntu
-RUN apt-get update && apt-get install -y iputils-ping net-tools
-CMD bash
+FROM ubuntu:latest
 
+RUN apt update 
+RUN apt install -y net-tools iputils-ping
+
+CMD bash
 CMD ["sleep", "infinity"]
