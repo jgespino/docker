@@ -5,5 +5,3 @@ RUN apt update
 RUN apt install -y net-tools iputils-ping
 
 CMD bash
-
-ENTRYPOINT ["tail", "-f", "/dev/null"]
