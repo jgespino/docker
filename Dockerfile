@@ -4,3 +4,4 @@ LABEL version="1.0"
 RUN apt update
 RUN apt install -y net-tools iputils-ping
 
+ENTRYPOINT ["tail", "-f", "/dev/null"]
