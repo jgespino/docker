@@ -1,9 +1,5 @@
-FROM ubuntu:20.04
-LABEL version="1.0"
-
-RUN apt update
-RUN apt install -y net-tools iputils-ping
-
+FROM ubuntu
+RUN apt-get update && apt-get install -y iputils-ping net-tools
 CMD bash
 
 CMD ["sleep", "infinity"]
